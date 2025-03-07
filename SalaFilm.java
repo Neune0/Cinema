@@ -1,12 +1,16 @@
 import java.util.ArrayList;
 
+
 public class SalaFilm extends Sala {
     ArrayList<Cliente> clienti = new ArrayList<Cliente>();
 
-    public SalaFilm(String nome, int capacita, int codice, ArrayList<Cliente> clienti) {
+
+    public SalaFilm(String nome, int capacita, int codice, ArrayList<Cliente> clienti){
+
         super(nome, capacita, codice);
         this.clienti = clienti;
     }
+
 
     public ArrayList<Cliente> getClienti() {
         return clienti;
@@ -17,7 +21,8 @@ public class SalaFilm extends Sala {
     }
 
     public void removeClienti(Cliente cliente) {
-        clienti.remove(cliente);
+    
+         clienti.remove(cliente);
     }
 
     public void clearSala() {
