@@ -2,7 +2,7 @@ public class GestoreCinema extends Utente {
     protected String admin;
     protected String password;
 
-    GestoreCinema(String admin, String nome, String password) {
+    public GestoreCinema(String admin, String nome, String password) {
         super(nome, password);
         this.admin = "Admin";
     }
