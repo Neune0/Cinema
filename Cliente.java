@@ -51,7 +51,7 @@ public class Cliente extends Utente{
         return email;
     }
 
-    private String getPassword(){
+    public String getPassword(){
         return password;
     }
 
