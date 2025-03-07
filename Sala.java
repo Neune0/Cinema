@@ -17,7 +17,7 @@ abstract class Sala{
         return capacita;
     }
 
-    public int getCodice(){
+    public int getNumeroSala(){
         return codice;
     }
 
