@@ -6,11 +6,11 @@ public class GestoreCinema extends Utente {
     GestoreCinema(String admin, String nome, String password) {
         super(nome, password);
         this.admin = "Admin";
-
     }
 
     public String getAdmin() {
         return admin;
+    }
 
     public void setAdmin(String admin) {
         this.admin = admin;
@@ -29,6 +29,6 @@ public class GestoreCinema extends Utente {
 
     }
 
-    public void logout() {}
+    public void logout() {
     }
 }
