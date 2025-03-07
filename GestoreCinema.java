@@ -2,12 +2,11 @@ public class GestoreCinema extends Utente {
     protected String admin;
     protected String password;
 
-    GestoreCinema(String admin, String nome, String password) {
-        this.admin = "Admin";
+    public GestoreCinema(String admin, String nome, String password) {
         super(nome, password);
+        this.admin = "Admin";
     }
 
-    @Override
     public void gestisciCinema() {
         // Funzionalità per gestire il cinema (es. aggiungere una sala, aggiungere un
         // film)
