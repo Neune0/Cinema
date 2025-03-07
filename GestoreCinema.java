@@ -20,6 +20,14 @@ public class GestoreCinema extends Utente {
 
     // Metodo per aggiungere un film
     public void aggiungiFilm(SalaFilm salaFilm) {
-        System.out.println("Film aggiunto nella sala " + salaFilm.getNumeroSala() + ": " + salaFilm.getNomeFilm());
+        System.out.println("Film aggiunto nella sala " + salaFilm.getNumeroSala() + ": " + salaFilm.getNome());
+    }
+
+    public void login() {
+        System.out.println("Login effettuato con successo");
+    }
+
+    public void logout() {
+        System.out.println("Logout effettuato con successo");
     }
 }
