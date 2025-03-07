@@ -3,24 +3,32 @@ public class GestoreCinema extends Utente {
     protected String password;
 
     GestoreCinema(String admin, String nome, String password) {
-        this.admin = "Admin";
         super(nome, password);
+        this.admin = "Admin";
+
     }
 
-    @Override
-    public void gestisciCinema() {
-        // Funzionalità per gestire il cinema (es. aggiungere una sala, aggiungere un
-        // film)
-        System.out.println("Gestione Cinema: aggiungi sala, aggiungi film...");
+    public String getAdmin() {
+        return admin;
     }
 
-    // Metodo per aggiungere una sala
-    public void aggiungiSala(Sala sala) {
-        System.out.println("Sala aggiunta: " + sala.getNumeroSala());
+    public void setAdmin(String admin) {
+        this.admin = admin;
     }
 
-    // Metodo per aggiungere un film
-    public void aggiungiFilm(SalaFilm salaFilm) {
-        System.out.println("Film aggiunto nella sala " + salaFilm.getNumeroSala() + ": " + salaFilm.getNomeFilm());
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void login() {
+
+    }
+
+    public void logout() {
+
     }
 }
